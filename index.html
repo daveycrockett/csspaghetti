@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Button Bonanza</title>
+<link rel="stylesheet" type="text/css" href="buttons.css"/>
+<link rel="stylesheet" type="text/css" href="pagination.css"/>
+<style>
+body {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:16px;
+	font-weight:bold;
+}
+</style>
+</head>
+<body>
+    <form id="searchForm">
+        <button id="searchButton">search</button>
+		<button class="formbutton">RESET</button>
+		<button type="button" class="formbutton">SAVE</button>
+		<button type="button" class="formcancelbutton">Cancel</button>
+    </form>
+	<div id="delete-dialog" class="g-dialog">
+	    <table>
+	    	<tr>
+	    		<td><button type="button" class="btn-primary btn">Yes, Delete</button></td>
+	    		<td><button type="button" class="btn">No, Cancel</button></td>
+	        </tr>
+	    </table>
+	</div>
+	<button id="login_btn" type="submit" class="yes" value="Login">Login Now!</button>
+	<div class="row-fluid pagination-row">
+	    <div class="btn-group">
+	        <div class="content-paging pull-right">
+				<span class="g-pagination pagination pagination-right pagination-small">
+					<ul class="g-page-nav">
+						<li class="g-page-li first active disabled">
+							<a ref="0" class="g-page-anchor">First</a>
+						</li>
+						<li class="g-page-li active g-current-page">
+							<a ref="0" class="g-page-anchor">1</a>
+						</li>
+						<li class="g-page-li">
+							<a ref="1" class="g-page-anchor">2</a>
+						</li>
+					</ul>
+				</span>
+	        </div>
+	    </div>
+	</div>
+</body>

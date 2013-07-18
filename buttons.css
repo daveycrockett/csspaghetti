@@ -1,0 +1,189 @@
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("MyriadPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Myriad Pro Bold";
+    src: url("MyriadPro-Bold.otf") format("opentype");
+}
+
+html { padding: 0; margin: 0; }
+
+body {
+    font-family: "Myriad Pro", noserif;
+    font-size: 12pt;
+    color: #636363;
+}
+
+/* global button styles */
+
+button {
+	color: #fff;
+    box-shadow: 1px 2px 3px #333; 
+    border-radius: 2px !important;
+    padding: 2px 20px 0 20px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    height: 30px;
+    margin-right: 10px;
+    text-shadow: 1px 1px 1px #333;
+    box-shadow: 0px 2px 2px 0px #424242;
+    font: bold 16px "Myriad Pro";
+    float: left;
+    clear: none;
+    cursor: pointer;
+    z-index: 30;
+    background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImcyNzciIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNBNkM5NUMiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM2MzlFMUMiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2cyNzcpIiAvPgo8L3N2Zz4=);
+    font-family: Myriad Pro;    
+}
+    
+button.no, .flyout button {
+    margin: 14px 3px 0 0;
+    color: #636363;
+    float: right;
+    clear: none;
+    text-shadow: 1px 1px 1px #fff;
+    background: -moz-linear-gradient(bottom, #d8d8d8 0%,#fdfdfd 100%);
+    background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%,#d8d8d8), color-stop(100%,#fdfdfd));
+    background: -webkit-linear-gradient(bottom, #d8d8d8 0%,#fdfdfd 100%);
+    background: -o-linear-gradient(bottom, #d8d8d8 0%,#fdfdfd 100%);
+    background: -ms-linear-gradient(bottom, #d8d8d8 0%,#fdfdfd 100%);
+    background: linear-gradient(to top, #d8d8d8 0%,#fdfdfd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#fdfdfd',GradientType=0 );
+}
+    
+button.yes {
+    margin: 14px 0 0 6px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #333;
+    border: solid 1px #bdbdbd;
+    border-top: solid 1px #bcdd8c;
+
+}
+
+button.add ,button.remove {
+    width: auto;
+    display: block;
+    color: #636363;
+    text-shadow: 0 1px 0 #fff;
+    padding: 3px 5px 4px 30px;
+    background-repeat: no-repeat,  no-repeat;
+    background-size: auto, cover;
+    background-position: left center, left top;
+    margin-bottom: 10px;
+}
+
+form button.button-right {
+    margin-left:0;
+    float:right;
+}
+
+form button.button-center {
+    margin:0 30%;
+}
+
+button.add {
+    background-image: url("../../img/smallPlus.png"),url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc1OSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRUZFRkVGIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjQjhCOEI4IiBvZmZzZXQ9IjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNnNTkpIiAvPgo8L3N2Zz4=);
+}
+
+button.remove {
+    background-image: url("../../img/smallMinus.png"),url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc1OSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRUZFRkVGIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjQjhCOEI4IiBvZmZzZXQ9IjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNnNTkpIiAvPgo8L3N2Zz4=);
+    float: right;
+}
+
+button.add:hover {
+    background-image: url("../../img/smallPlus.png"),url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc0NDIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNCQUJBQkEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNGOEY4RjgiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c0NDIpIiAvPgo8L3N2Zz4=);
+    box-shadow: none;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    background-position: left 2px, left top;
+}
+
+
+button.remove:hover {
+    background-image: url("../../img/smallMinus.png"),url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc0NDIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNCQUJBQkEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNGOEY4RjgiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c0NDIpIiAvPgo8L3N2Zz4=);
+    box-shadow: none;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    background-position: left 4px, left top;
+}
+
+button[data-action="other"] {
+    width: 30px !important;
+    height: 30px !important;
+    padding: 0 !important;
+}
+
+button[data-action="edit"] {
+    width: 30px !important;
+    height: 30px !important;
+    padding: 0 !important;
+}
+
+button[data-action="remove"] {
+    width: 30px !important;
+    height: 30px !important;
+    padding: 0 !important;
+}
+
+form .btn{
+    border-radius:1px;
+    margin:0px 10px;
+    background-color:#e5e5e5;
+    color:#8a8a8a;
+    border-bottom:1px solid #1f1e23;
+}
+
+.btn {
+    padding: 4px 14px;
+    text-align:center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+    background-color: #f5f5f5;
+    border: 1px solid #bbbbbb;
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+}
+
+.btn i {
+    display: inline-block;
+}
+
+.g-dialog .btn {
+    float: right;
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    color: #505050;
+    
+    -webkit-box-shadow: -3px 2px 2px #666;
+    -moz-box-shadow: -3px 2px 2px #666;
+    box-shadow: -3px 2px 2px #666;
+    
+    margin-left: 10px;
+    border-radius: 0;
+}
+
+.g-dialog .btn-primary {
+    float: left;
+    font-family: "Myriad Pro";
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0;
+    text-shadow: 1px 1px 1px #333;
+    outline: none;
+    background: #7dbd4b; /* Old browsers */
+    background: -moz-linear-gradient(bottom, #7dbd4b 0%,#a2d063 50%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%,#7dbd4b), color-stop(50%,#a2d063)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(bottom, #7dbd4b 0%,#a2d063 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(bottom, #7dbd4b 0%,#a2d063 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(bottom, #7dbd4b 0%,#a2d063 50%); /* IE10+ */
+    background: linear-gradient(to top, #7dbd4b 0%,#a2d063 50%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A2D063', endColorstr='#7dDB9E8',GradientType=0 ); /* IE6-9 */
+
+    -webkit-box-shadow: -3px 2px 2px #666;
+    -moz-box-shadow: -3px 2px 2px #666;
+    box-shadow: -3px 2px 2px #666;
+    
+    margin-right: 10px;
+}
+ 
